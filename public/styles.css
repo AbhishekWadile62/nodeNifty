@@ -1,0 +1,112 @@
+/* Basic reset and styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Container for controls */
+#controls {
+    text-align: center;
+    margin: 20px;
+    width: 100%;
+    max-width: 1200px;
+
+}
+#butts{
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+/* Styling for buttons */
+#controls button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Dropdown styling */
+#expiryDates {
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Container for the table */
+#optionChainTable {
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 4px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+#footer{
+    width: 100%;
+    max-width: 1200%;
+    text-align: center;
+    font-size: large;
+    padding: 20px;
+}
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    /* Adjust margins and padding */
+    body {
+        margin: 10px;
+    }
+
+    #controls button, #expiryDates {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    /* Make the table scrollable horizontally */
+    #optionChainTable {
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Further adjustments for smaller screens */
+    #controls button, #expiryDates {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    th, td {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

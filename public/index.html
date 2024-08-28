@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSE Option Chain Data Fetcher</title>
+    <link rel="stylesheet" href="/styles.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+    <h1>NIFTY PROFIT MAKING MACHINE</h1>
+
+    <div id="controls">
+        <!-- Dropdown for expiry dates -->
+        <label for="expiryDates">Select Expiry Date:</label>
+        <select id="expiryDates">
+            <option value="">Select Expiry Date</option>
+            <!-- Options will be populated here -->
+        </select>
+    </div>
+    <div id="butts">
+        
+        <!-- Button to fetch data -->
+        <button id="getOptionChainButton">Get Data</button>
+        
+        <!-- Live refresh button -->
+        <button id="startRefreshBtn">Live Refresh</button>
+        
+        <!-- Stop refresh button -->
+        <button id="stopRefreshBtn">Stop Refresh</button>
+        
+        <p id="cookieStatus"></p>
+    </div>
+    </div>
+
+    <!-- Container to display the option chain table -->
+    <div id="optionChainTable"></div>
+
+    <script src="/script.js" defer></script> <!-- Link to your external JavaScript file -->
+</body>
+</html>
